@@ -6,14 +6,17 @@
   <title>KAPTAL | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
+  <script src="script.js" defer></script>
+  </head>
 <body>
   <header class="navbar">
     <div class="logo">KAPTAL</div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation">☰</button>
+
     <nav class="menu">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ABOUT</a></li>
         <li><a href="#">PROJECTS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
@@ -25,7 +28,7 @@
       <h1>Hello,</h1>
       <h2>I'm Alexander Akosile.<br>A passionate Front-End Developer</h2>
       <p>
-        and creative problem-solver, but you can call me Alex.
+        and a creative problem-solver, but you can call me Alex.
         <br><br>
         I love turning ideas into clean, responsive, and user-friendly websites. My journey started with curiosity, but it quickly grew into a mission: building digital experiences that not only look good, but also work seamlessly across devices.
         <br><br>
@@ -41,13 +44,38 @@
   </main>
 
   <section class="projects">
-    <h2>Projects Section</h2>
-    <p>This section is still under construction. Please check back later for updates.</p>
-    <h5>Thank you for your patience and understanding.</h5>
+    <h2>Recent Projects</h2>
+    <div class="budKonnect-frame">
+        <a href="https://kapteynalexis.github.io/budKonnect-landing-page/"><img src="budkonnect.png" alt="budKonnect-landing-page screenshot"></a> </div>  
+            <p>A social media platform for connecting with friends and sharing moments.</p>
+    <div class="devam-frame">
+        <a href="https://kapteynalexis.github.io/dev-am-landing-page/"><img src="devam.png" alt="dev-am-landing-page screenshot"></a> </div>  
+            <p>A modern landing page for a tech startup, showcasing their innovative solutions.</p>
+    
   </section>
+  <section class="contact">
+    <h2>Get in touch</h2>
+    <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
+    <div class="form">
+     <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="given-name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Your email" autocomplete="email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+     <button class="btn" type="submit">Send Message</button>
+     
+        </form>
+    </div>
+    
+     </section>
 
   <footer class="footer">
-    <p>&copy; 2025 KAPTAL. All rights reserved. Designed by Alexander Akosile.</p>
+    <p>&copy; 2025 KAPTAL. All rights reserved.<br>Designed & Developed by Alexander Akosile.</p>
+    
   </footer>
 </body>
 </html>

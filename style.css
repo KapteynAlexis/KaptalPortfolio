@@ -24,7 +24,6 @@ h1, h2, h3 {
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
-h5 { font-size: 1.2rem; }
 
 /* Navbar */
 .navbar {
@@ -98,6 +97,179 @@ h5 { font-size: 1.2rem; }
   border-radius: 10px;
   margin: 20px;
 }
+.budKonnect-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 420px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.budKonnect-frame:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.devam-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 420px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.devam-frame:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;}
+.projects h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+ 
+}
+.projects p {
+  font-size: 1.2rem;
+  color: #1e2027;
+  margin-top: 10px;
+}
+
+.contact h2{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    color:#1e2027
+}
+.contact p{
+    font-size: 1.2rem;
+    color: #1e2027;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+}  
+.contact-form {
+  background: #1e2027;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;}
+
+.contact-form label{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+.form form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }  
+.form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px #8bbff9 solid;
+  background: transparent;
+  color: #ffffff;
+  
+}
+.form input:focus {
+  outline: none;
+}
+.form textarea{padding: 10px;
+  border: none;
+  border-bottom: 2px #8bbff9 solid;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+.form button {
+  padding: 10px;
+  border: none;
+  background: #8bbff9;
+  color: #1e2027;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form button:hover {
+  background: #1e2027;
+  color: #8bbff9;
+  transition: 0.3s ease
+}
+/* --- Theme toggle button --- */
+.theme-toggle {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.12);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform .2s ease, background .2s ease;
+}
+
+/* small hover effect */
+.theme-toggle:hover { transform: scale(1.05); }
+
+/* --- DARK THEME OVERRIDES --- */
+body.dark-theme {
+  /* dark overlay on background image for readability */
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('1.jpg') center/cover no-repeat;
+  color: #e9f2fb; /* default text in dark mode */
+  
+}
+
+/* navbar + footer */
+body.dark-theme .navbar,
+body.dark-theme .footer {
+  background: #0f1720;
+  color: #e9f2fb;
+}
+
+/* project card background */
+body.dark-theme .projects {
+  background: rgba(15,17,20,0.76);
+  color: #e9f2fb;
+}
+
+/* contact form */
+body.dark-theme .contact-form {
+  background: #0f1720;
+  color: #e9f2fb;
+}
+
+/* inputs and textarea in dark theme */
+body.dark-theme .form input,
+body.dark-theme .form textarea {
+  color: #e9f2fb;
+  border-bottom-color: #8bbff9; /* keep your accent */
+}
+
+/* images / frames */
+body.dark-theme .frame {
+  box-shadow: 0 8px 12px rgba(0,0,0,0.6);
+}
+
+/* adjust logo color in dark mode (keeps accent) */
+body.dark-theme .logo {
+  color: #8bbff9;
+}
+
+/* toggle btn appearance in dark */
+body.dark-theme .theme-toggle {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
 
 /* Footer */
 .footer {
@@ -106,6 +278,7 @@ h5 { font-size: 1.2rem; }
   font-size: 14px;
   padding: 15px 5%;
   background: #1e2027;
+  margin-top: 20px;
 }
 /* 📱 Responsive Breakpoints */
 @media (max-width: 1024px) {
@@ -167,3 +340,44 @@ h5 { font-size: 1.2rem; }
     padding: 10px;
   }
 }
+/* --- Hamburger menu --- */
+.hamburger {
+  display: none; /* hidden on desktop */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show on mobile */
+  }
+
+  .menu {
+    max-height: 0; /* collapsed */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%;
+    background: #1e2027;
+    margin-top: 10px;
+  }
+
+  .menu.active {
+    max-height: 300px; /* expand smoothly */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .menu ul li {
+    text-align: center;
+  }
+}
+
+/* End of CSS */
