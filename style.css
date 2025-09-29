@@ -18,7 +18,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('/My-Portfolio/Media/1.avif') no-repeat center center/cover;
+      background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('1.avif') no-repeat center center/cover;
       transition: all 0.3s ease;
     }
 
@@ -282,7 +282,7 @@
 
     /* DARK THEME OVERRIDES - Enhanced for better readability */
     body.dark-theme {
-      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/My-Portfolio/Media/1.avif') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('1.avif') center/cover no-repeat;
       color: #e9f2fb;
     }
 
