@@ -8,22 +8,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
   </head>
-<body>
+<body>  
   <header class="navbar">
-    <div class="logo">KAPTAL</div>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-    <button id="hamburger" class="hamburger" aria-label="Toggle navigation">☰</button>
-
+    <div class="navbar-container">
+      <div class="logo">KAPTAL</div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" type="button">☰</button>
+    </div>
+    
     <nav class="menu">
       <ul>
-                <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#main">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">🌙</button></li>
       </ul>
     </nav>
   </header>
 
-  <main class="main">
+  <main class="main" id="main">
     <section class="content">
       <h1>Hello,</h1>
       <h2>I'm Alexander Akosile.<br>A passionate Front-End Developer</h2>
@@ -32,32 +34,60 @@
         <br><br>
         I love turning ideas into clean, responsive, and user-friendly websites. My journey started with curiosity, but it quickly grew into a mission: building digital experiences that not only look good, but also work seamlessly across devices.
         <br><br>
-        Right now, I’m sharpening my skills in HTML, CSS, and JavaScript, while exploring modern frameworks and tools to grow into a full-stack developer. Beyond code, I bring creativity from my background in design and a relentless drive to keep learning.
+        Right now, I'm sharpening my skills in HTML, CSS, and JavaScript, while exploring modern frameworks and tools to grow into a full-stack developer. Beyond code, I bring creativity from my background in design and a relentless drive to keep learning.
         <br><br>
         My goal is to build solutions that make life easier, more connected, and more enjoyable for people everywhere.
       </p>
     </section>
 
     <div class="frame">
-      <img src="2.png" alt="Alexander Akosile in formal attire, professional portfolio profile photo.">
+      <img src="/My-Portfolio/Media/3.png" alt="Alexander Akosile in formal attire, professional portfolio profile photo.">
     </div>
   </main>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2>Recent Projects</h2>
     <div class="budKonnect-frame">
-        <a href="https://kapteynalexis.github.io/budKonnect-landing-page/"><img src="budkonnect.png" alt="budKonnect-landing-page screenshot"></a> </div>  
-            <p>A social media platform for connecting with friends and sharing moments.</p>
-    <div class="devam-frame">
-        <a href="https://kapteynalexis.github.io/dev-am-landing-page/"><img src="devam.png" alt="dev-am-landing-page screenshot"></a> </div>  
-            <p>A modern landing page for a tech startup, showcasing their innovative solutions.</p>
+        <a href="https://kapteynalexis.github.io/budKonnect-landing-page/">
+          <img src="/My-Portfolio/Media/budkonnect.png" alt="budKonnect-landing-page screenshot">
+        </a> 
+    </div>  
+    <p>A sign-up page for a social media platform for connecting with friends and sharing moments.</p>
     
+    <div class="devam-frame">
+        <a href="https://kapteynalexis.github.io/dev-am-landing-page/">
+          <img src="/My-Portfolio/Media/devam.png" alt="dev-am-landing-page screenshot">
+        </a> 
+    </div>  
+    <p>A modern landing page for a tech startup, showcasing their innovative solutions.</p>
+    
+    <div class="tesla-frame">
+      <a href="https://kapteynalexis.github.io/Tesla-Landing-Page/">
+        <img src="/My-Portfolio/Media/tesla-logo.png" width="100px" alt="Tesla landing page">
+      </a>
+    </div>
+    <p>Tesla Landing Page</p>
+    
+    <div class="js-calc">
+      <a href="https://kapteynalexis.github.io/JS-CALC/">
+        <img src="/My-Portfolio/Media/JS-CALC.png" alt="A basic calculator">
+      </a>
+    </div>
+    <p>A Basic Calculator</p>
+    
+    <div class="todolist">
+      <a href="https://kapteynalexis.github.io/ToDolist/">
+        <img src="/My-Portfolio/Media/todolist.png" alt="A Simple To-do list">
+      </a>
+    </div>
+    <p>A Simple To-Do list</p>
   </section>
-  <section class="contact">
+
+  <section class="contact" id="contact">
     <h2>Get in touch</h2>
     <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
     <div class="form">
-     <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+     <form class="contact-form" action="mailto:alexakosile1@gmail.com?subject=Contact%20Form%20Submission" method="POST" enctype="text/plain">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="given-name">
 
@@ -67,15 +97,12 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
      <button class="btn" type="submit">Send Message</button>
-     
-        </form>
+     </form>
     </div>
-    
-     </section>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 KAPTAL. All rights reserved.<br>Designed & Developed by Alexander Akosile.</p>
-    
   </footer>
 </body>
 </html>
